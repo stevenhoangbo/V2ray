@@ -11,11 +11,12 @@ apt-get install curl
 
 bash <(curl -L -s https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)
 
-安装后调试配置文件（config.json），我的是文件地址是，/user/etc/v2ray/config.json
+安装后调试配置文件（config.json），我的是文件地址是，/usr/local/etc/v2ray/config.json
 
 配置文件样本。（最新的不支持aes-256-cfb,支持aes-256-gcm）SSR就不能用了。
 
-https://tools.sprov.xyz/v2ray/ 配置文件生成网站，支持ss和v2ray同时配置。
+<a href="https://tools.sprov.xyz/v2ray/" target="_black">https://tools.sprov.xyz/v2ray/</a> 配置文件生成网站，支持ss和v2ray同时配置。
+
 生成后替换配置文件，然后重启服务。
 
 开启BBR加速
@@ -29,5 +30,6 @@ lsmod | grep bbr //查询BBR状态
 
 
 systemctl start|restart|stop|status v2ray 控制 V2Ray 的运行.
+systemctl enable v2ray   开机自启动
 
 本地下载v2ranN,配置和服务器一样就行了。
