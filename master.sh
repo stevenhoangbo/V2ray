@@ -1,5 +1,5 @@
-#!/bin/sh
+#!/bin/bash
 
-sudo apt-get install curl -y
-sudo apt-get install nginx -y
-sudo apt-get install vim -y
+apt-get install curl -y
+apt-get install nginx -y
+apt-get install vim -y
