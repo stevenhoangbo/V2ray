@@ -3,11 +3,11 @@ v2rayN windows 4.12版本完全使用教程2021.03.17
 最近的v2rayN windows 4.12版本配置文件可同步shadowsock,但是不支持加密格式为aes-256-cfb, 支持 aes-256-gcm,也就是说ssr应该用不了。
 程序运行环境（linux debian 9 x64）
 
-<br/>1.准备工作 升级和安装curl 
+1.准备工作 升级和安装curl </br>
 apt-get update</br>
-apt-get install curl -y
-apt-get install nginx -y
-apt-get install vim -y
+apt-get install curl -y  </br>
+apt-get install nginx -y  </br>
+apt-get install vim -y  </br>
 
 2.安装v2ray(自带shadowsocks）
 
