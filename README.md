@@ -9,6 +9,9 @@ apt-get install curl -y  </br>
 apt-get install nginx -y  </br>
 apt-get install vim -y  </br>
 
+
+
+</br>  https://raw.githubusercontent.com/stevenhoangbo/V2ray/main/master.sh </br>
 2.安装v2ray(自带shadowsocks）
 
 bash <(curl -L -s https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)
