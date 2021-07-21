@@ -8,6 +8,8 @@ apt-get update</br>
 apt-get install curl -y  </br>
 apt-get install nginx -y  </br>
 apt-get install vim -y  </br>
+apt-get install lrzsz -y  </br>
+
 
 
 
