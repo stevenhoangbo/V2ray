@@ -4,8 +4,10 @@ v2rayN windows 4.12版本完全使用教程2021.03.17
 程序运行环境（linux debian 9 x64）
 
 <br/>1.准备工作 升级和安装curl 
-apt-get update
-apt-get install curl
+apt-get update</br>
+apt-get install curl -y
+apt-get install nginx -y
+apt-get install vim -y
 
 2.安装v2ray(自带shadowsocks）
 
@@ -21,15 +23,12 @@ bash <(curl -L -s https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/mast
 
 开启BBR加速
 echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
-
 echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
-
 sysctl -p //保存状态
-
 lsmod | grep bbr //查询BBR状态
 
-
-systemctl start|restart|stop|status v2ray 控制 V2Ray 的运行.
 systemctl enable v2ray   开机自启动
+systemctl daemon-reload  //重新加载配置
+systemctl start|restart|stop|status v2ray 控制 V2Ray 的运行.
 
 本地下载v2ranN,配置和服务器一样就行了。
