@@ -11,9 +11,9 @@ apt-get install vim -y  </br>
 apt-get install lrzsz -y  </br>
 
 
+一键安装脚本：bash <(curl -L -s https://raw.githubusercontent.com/stevenhoangbo/V2ray/main/master.sh) </br>
 
 
-一件安装脚本：bash <(curl -L -s https://raw.githubusercontent.com/stevenhoangbo/V2ray/main/master.sh) </br>
 2.安装v2ray(自带shadowsocks）
 
 bash <(curl -L -s https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)
