@@ -25,9 +25,9 @@ bash <(curl -L -s https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/mast
 生成后替换配置文件，然后重启服务。
 
 开启BBR加速
-echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
-echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
-sysctl -p //保存状态
+echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf </br>
+echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf </br>
+sysctl -p </br> //保存状态
 lsmod | grep bbr //查询BBR状态
 
 systemctl enable v2ray   开机自启动
