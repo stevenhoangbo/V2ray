@@ -4,11 +4,7 @@ v2rayN windows 4.12版本完全使用教程2021.03.17
 程序运行环境（linux debian 9 x64）
 
 1.准备工作 升级和安装curl </br>
-apt-get update</br>
-apt-get install curl -y  </br>
-apt-get install nginx -y  </br>
-apt-get install vim -y  </br>
-apt-get install lrzsz -y  </br>
+apt-get update && apt-get install curl -y </br>
 
 
 一键安装脚本：bash <(curl -L -s https://raw.githubusercontent.com/stevenhoangbo/V2ray/main/master.sh) </br>
