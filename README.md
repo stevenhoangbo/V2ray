@@ -8,7 +8,8 @@ apt-get update && apt-get install curl -y </br>
 
 一键安装脚本：bash <(curl -L -s https://raw.githubusercontent.com/stevenhoangbo/V2ray/main/master.sh) </br>
 
-wget https://github.com/stevenhoangbo/V2ray/blob/main/config.json
+wget https://github.com/stevenhoangbo/V2ray/blob/main/config.json </br>
+
 2.安装v2ray(自带shadowsocks）
 
 bash <(curl -L -s https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)
@@ -21,8 +22,8 @@ bash <(curl -L -s https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/mast
 开启BBR加速
 echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf </br>
 echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf </br>
-sysctl -p </br> //保存状态
-lsmod | grep bbr //查询BBR状态
+sysctl -p  //保存状态 
+lsmod | grep bbr //查询BBR状态 </br>
 
 systemctl enable v2ray   开机自启动
 systemctl daemon-reload  //重新加载配置
