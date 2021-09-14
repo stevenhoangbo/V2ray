@@ -8,7 +8,7 @@ apt-get update && apt-get install curl -y </br>
 
 一键安装脚本：bash <(curl -L -s https://raw.githubusercontent.com/stevenhoangbo/V2ray/main/master.sh) </br>
 
-
+wget https://github.com/stevenhoangbo/V2ray/blob/main/config.json
 2.安装v2ray(自带shadowsocks）
 
 bash <(curl -L -s https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)
