@@ -20,13 +20,19 @@ bash <(curl -L -s https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/mast
 生成后替换配置文件，然后重启服务。
 
 开启BBR加速
+
 echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf </br>
+
 echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf </br>
-sysctl -p  //保存状态 </br>
+
+sysctl -p  //保存状态
+
 lsmod | grep bbr //查询BBR状态 </br>
 
 systemctl enable v2ray   开机自启动
+
 systemctl daemon-reload  //重新加载配置
+
 systemctl restart v2tay start/stop/status/restart 控制 V2Ray 的运行.
 
 本地下载v2ranN,配置和服务器一样就行了。
