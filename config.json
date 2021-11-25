@@ -1,12 +1,12 @@
 {
   "inbounds": [
     {
-      "port": 21352,
-      "listen": "127.0.0.1",
+      "port": 12138,
+      "listen": "0.0.0.0",
       "protocol": "shadowsocks",
       "settings": {
         "method": "aes-256-gcm",
-        "password": "Chinano1",
+        "password": "chinano1",
         "network": "tcp,udp"
       },
       "tag": "",
@@ -19,13 +19,13 @@
       }
     },
     {
-      "port": 32251,
-      "listen": "127.0.0.1",
+      "port": 17321,
+      "listen": "0.0.0.0",
       "protocol": "vmess",
       "settings": {
         "clients": [
           {
-            "id": "6189db3d-3f27-4c56-ba0f-c95ac24a3acb",
+            "id": "49219928-1b46-49de-9a38-f49bfa10b907",
             "alterId": 64
           }
         ]
