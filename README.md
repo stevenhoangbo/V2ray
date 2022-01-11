@@ -11,13 +11,9 @@ apt-get update && apt-get install curl -y </br>
 
 wget https://github.com/stevenhoangbo/V2ray/blob/main/config.json </br>
 
-2.安装v2ray(自带shadowsocks）
-
-bash <(curl -L -s https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)
-
 安装后调试配置文件（config.json），我的是文件地址是，/usr/local/etc/v2ray/config.json
 
-配置文件样本。（最新的不支持aes-256-cfb,支持aes-256-gcm）SSR就不能用了。
+配置文件样本。（最新的不支持aes-256-cfb,支持aes-256-gcm）SSR 就不能用了。
 生成后替换配置文件，然后重启服务。
 
 开启BBR加速
@@ -34,6 +30,6 @@ systemctl enable v2ray   开机自启动
 
 systemctl daemon-reload  //重新加载配置
 
-systemctl restart v2tay start/stop/status/restart 控制 V2Ray 的运行.
+systemctl restart v2ray start/stop/status/restart 控制 V2Ray 的运行.
 
 本地下载v2ranN,配置和服务器一样就行了。
