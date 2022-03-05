@@ -9,7 +9,7 @@ apt-get update && apt-get install curl -y </br>
 
 一键安装脚本：bash <(curl -L -s https://raw.githubusercontent.com/stevenhoangbo/V2ray/main/master.sh) </br>
 
-wget https://github.com/stevenhoangbo/V2ray/blob/main/config.json </br>
+wget -O https://github.com/stevenhoangbo/V2ray/blob/main/config.json </br>
 
 安装后调试配置文件（config.json），我的是文件地址是，/usr/local/etc/v2ray/config.json
 
