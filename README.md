@@ -33,3 +33,13 @@ systemctl daemon-reload  //重新加载配置
 systemctl restart v2ray start/stop/status/restart 控制 V2Ray 的运行.
 
 本地下载v2ranN,配置和服务器一样就行了。
+
+nginx在linux系统的默认端口是80，可能由于是端口未开放导致连接不上。
+
+解决办法可以对外开放访问端口 /sbin/iptables -I INPUT -p tcp --dport 80 -j ACCEPT
+
+保存开放端口 /etc/rc.d/init.d/iptables save
+
+直接看图不说话！
+iptables -P INPUT ACCEPT 
+iptables -P OUTPUT ACCEPT 
